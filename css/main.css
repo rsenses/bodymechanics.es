@@ -19,9 +19,6 @@ iframe {
     display: block;
     max-width: 100%;
 }
-img {
-    display: block;
-}
 .left,
 img[align='left'] {
     display: block;
@@ -241,19 +238,34 @@ footer p {
 }
 .navbar {
     border-radius: 0;
+    margin-bottom: 0;
 }
 .alert-brown,
 .navbar-inverse {
     background-color: #c3bdae;
     border-color: #c3bdae;
 }
-.navbar-nav > li > a {
-    padding-top: 55px !important;
-    padding-bottom: 55px !important;
+.navbar-inverse .navbar-brand {
+    color: #fff;
 }
-.navbar-brand > img {
-    max-height: 100px;
+.logo {
+    background-color: #ddd;
+    text-align: center;
+    padding: 15px 0;
 }
+@media (min-width: 768px) {
+    .navbar {
+        margin-bottom: 20px;
+    }
+    .navbar-nav > li > a {
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
+    }
+    .navbar-brand > img {
+        max-height: 100px;
+    }
+}
+
 #beneficios {
     background-color: #c3bdae;
     padding: 30px 0;
